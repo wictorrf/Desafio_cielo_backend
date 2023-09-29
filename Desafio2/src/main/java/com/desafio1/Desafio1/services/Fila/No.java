@@ -4,7 +4,6 @@ public class No<T> {
     
     private T object;
     private No<T> refNo;
-
     
     public No() {
         
@@ -60,7 +59,4 @@ public class No<T> {
             return false;
         return true;
     }
-
-    
 }
-

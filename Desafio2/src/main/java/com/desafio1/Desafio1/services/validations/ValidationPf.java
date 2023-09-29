@@ -27,8 +27,6 @@ public class ValidationPf {
         if(data.mcc().length() != 4 || data.mcc().isEmpty()){
             return ResponsesReq.error("O campo 'mcc' deve ter 4 caracteres");
         }
-
-
         return ResponsesReq.success("Dados do usuário válidos", null);
     }
 }

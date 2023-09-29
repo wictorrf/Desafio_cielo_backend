@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import com.desafio1.Desafio1.domains.Pf;
 import com.desafio1.Desafio1.domains.User;
-import com.desafio1.Desafio1.dtos.PfDto;
 import com.desafio1.Desafio1.dtos.UserDto;
 import com.desafio1.Desafio1.repositories.PfRepository;
 import com.desafio1.Desafio1.repositories.UserRepository;

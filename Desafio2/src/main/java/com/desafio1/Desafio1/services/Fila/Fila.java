@@ -72,7 +72,6 @@ public class Fila<T> {
             current = current.getRefNo();
         }
     }
-    
 
     @Override
     public String toString() {

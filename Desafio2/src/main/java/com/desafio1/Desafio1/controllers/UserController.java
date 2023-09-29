@@ -19,7 +19,6 @@ import com.desafio1.Desafio1.services.UserService;
 import com.desafio1.Desafio1.services.responses.ResponsesReq;
 
 import jakarta.validation.Valid;
-
 @RestController
 @RequestMapping("/desafio")
 public class UserController {

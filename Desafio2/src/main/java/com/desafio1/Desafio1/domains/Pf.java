@@ -59,6 +59,4 @@ public class Pf {
     public String toString() {
         return "[id=" + id + ", name=" + name + ", email=" + email + ", cpf=" + cpf + ", mcc=" + mcc + "]";
     }
-
-    
 }

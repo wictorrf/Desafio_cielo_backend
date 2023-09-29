@@ -65,6 +65,4 @@ public class Pj {
         this.razaoSocial = data.razaoSocial();
         this.cnpj = data.cnpj();
     }
-
-
 }

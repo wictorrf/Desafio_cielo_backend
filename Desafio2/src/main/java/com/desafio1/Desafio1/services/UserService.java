@@ -20,8 +20,6 @@ import com.desafio1.Desafio1.services.responses.ResponsesReq;
 import com.desafio1.Desafio1.services.validations.ValidationPf;
 
 import jakarta.transaction.Transactional;
-import jakarta.validation.Valid;
-
 @Service
 public class UserService {
     

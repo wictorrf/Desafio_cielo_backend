@@ -1,6 +1,5 @@
 package com.desafio1.Desafio1.domains;
 
-
 import com.desafio1.Desafio1.domains.domainsTypes.UserType;
 import com.desafio1.Desafio1.dtos.UserDto;
 
@@ -65,7 +64,5 @@ public class User {
     public String toString() {
         return "User [id=" + id + ", name=" + name + ", email=" + email + ", cpf=" + cpf + ", mcc=" + mcc
                 + ", userType=" + userType + "]";
-    }
-
-    
+    }   
 }

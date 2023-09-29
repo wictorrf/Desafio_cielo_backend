@@ -19,8 +19,6 @@ import com.desafio1.Desafio1.services.responses.ResponsesReq;
 import com.desafio1.Desafio1.services.validations.ValidationPf;
 
 import jakarta.transaction.Transactional;
-import jakarta.validation.Valid;
-
 @Service
 public class UserService {
     
@@ -47,6 +45,7 @@ public class UserService {
         if (existingUser.isPresent()) {
             return ResponsesReq.error("Usuario ja existente com esse cpf!");
         }
+
         User newUser;
         if (data.userType() == UserType.PF) {
             newUser = registerPf(data);

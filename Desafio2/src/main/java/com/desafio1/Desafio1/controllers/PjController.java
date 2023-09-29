@@ -20,7 +20,6 @@ import com.desafio1.Desafio1.services.PjService;
 import com.desafio1.Desafio1.services.responses.ResponsesReq;
 
 import jakarta.validation.Valid;
-
 @RestController
 @RequestMapping("/pj")
 public class PjController {

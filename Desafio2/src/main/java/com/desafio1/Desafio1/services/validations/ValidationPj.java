@@ -31,7 +31,6 @@ public class ValidationPj {
         if(data.cnpj().length() != 14 || data.cnpj().isEmpty()){
             return ResponsesReq.error("O campo 'cnpj' deve ter 14 caracteres");
         }
-
         return ResponsesReq.success("Dados do usuário válidos", null);
     }
 }
