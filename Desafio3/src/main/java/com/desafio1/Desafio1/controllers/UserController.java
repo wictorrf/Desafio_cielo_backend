@@ -18,24 +18,14 @@ import com.desafio1.Desafio1.dtos.UserDto;
 import com.desafio1.Desafio1.services.UserService;
 import com.desafio1.Desafio1.services.responses.ResponsesReq;
 
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
-import io.swagger.v3.oas.annotations.tags.Tag;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import jakarta.validation.Valid;
-
 @RestController
 @RequestMapping("/desafio")
-@Tag(name = "Desafio1")
 public class UserController {
 
     @Autowired
     private UserService userService;
 
-    @Operation(summary = "cadastrar um usuários", method = "POST")
-        @ApiResponses(value = {
-        @ApiResponse(responseCode = "200", description = "Cadastro realizado com sucesso!")
-    })
     @PostMapping("/register")
     public ResponseEntity<ResponsesReq<User>> createUser(@RequestBody @Valid UserDto data) {
         try {
@@ -46,10 +36,6 @@ public class UserController {
         }
     }
 
-    @Operation(summary = "Busca todos os usuarios", method = "GET")
-    @ApiResponses(value = {
-        @ApiResponse(responseCode = "200", description = "Busca realizada com sucesso")
-    })
     @GetMapping("/users")
     public ResponseEntity<List<User>> allUsers(){
         List<User> listUsers = this.userService.getAllUsers();
