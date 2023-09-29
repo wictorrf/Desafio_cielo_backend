@@ -42,3 +42,11 @@ Nesse desafio eu criei um serviço AwsSqsUtil na pasta util, que trata toda a co
 OBS: _Eu não estava conseguindo utilizar o @Value, que é o que eu costumo usar, para trazer atraves do meu application.properties as minhas variáveis de conexão, provavelmente deveria ser algum defeito da IDE que no meu pc pessoal demora muito para carregar as coisas. Para poupar tempo e conseguir entregar eu carreguei as variáveis direto no service e voltou a funcionar._
 
 No controller Eu criei no endpoint /sqs/produce uma lógica para capturar todos os usuários cadastrados e enviar um por um para o painel sqs da AWS, e au consumir os usuários no endpoint /sqs/consume eles são automaticamente retirados da fila. 
+
+# Desafio4:
+
+Infelizmente, devido ao trabalho, eu não tive tempo de fazer esse desafio, porém eu ja sei como eu implementaria ele. Eu pensei em utilizar o spring security para gerar uma autenticação com token que não permite que os usuários cadastrados acessem a rota de fila, pois dentro dela existem dados pessoais que não podem ser vazados. Eu ja cheguei a implementar spring security em outros projetos meus e tambem é algo que eu consigo implementar.
+
+# Observações Finais:
+
+Estou muito grato por essa oportunidade de poder chegar até aqui e me testar com mais um desafio desses, mas eu espero que a minha historia nesse bootcamp não acabe por aqui, sou muito dedicado e estou sempre em busca de mais conhecimento e experiencias que vão acrescentar não somente para a minha vida, mas tambem para a empresa! Desde já agradeço!
