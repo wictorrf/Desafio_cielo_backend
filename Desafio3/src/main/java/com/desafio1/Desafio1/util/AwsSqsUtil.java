@@ -33,7 +33,7 @@ public class AwsSqsUtil {
     private String AWS_SQS_QUEUE_URL;
 
     public AwsSqsUtil() {
-        AWS_ACCESS_KEY = "AKIAVXQT4T777DMLKGOE";
+        AWS_ACCESS_KEY = "AKIAVXQT4T77DMLKGOE";
         AWS_SECRET_KEY = "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";
         AWS_SQS_QUEUE = "Cielo-sqs";
         AWS_SQS_QUEUE_ARN = "arn:aws:sqs:us-east-1:394104971263:Cielo-sqs";

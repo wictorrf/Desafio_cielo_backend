@@ -1,7 +1,6 @@
 package com.desafio1.Desafio1.services.Fila;
 
 import org.springframework.stereotype.Service;
-
 @Service
 public class Fila<T> {
 
@@ -89,13 +88,5 @@ public class Fila<T> {
         }
     
         return stringRetorno.toString();
-    }
-
-    public No<T> getRefUserEntradaFila() {
-        return refUserEntradaFila;
-    }
-    
-    public void setRefUserEntradaFila(No<T> refNo) {
-        refUserEntradaFila = refNo;
     }
 }
